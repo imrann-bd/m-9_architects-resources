@@ -16,13 +16,30 @@
 .gray-color {
     color: #424242;
 }
+/* dark03 */
+.description {
+    color: #727272;
+}
+.parimary-btn {
+    padding: 20px 24px;
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+}
 /* navbar */
-.navbar{
+.brand {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.navbar, .banner{
     max-width: 1440px;
     margin: 0px auto;
 }
 .navbar {
     justify-content: space-between;
+    align-items: center;
 }
 .nav-links {
 
@@ -31,10 +48,31 @@
     list-style: none;
 }
 .nav-item {
-
+    margin-right: 30px;
 }
 .nav-links {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+}
+/* banner */
+.banner-container {
+    max-width: 860px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner img {
+    width: 100%;
+}
+
+/* resposnive */
+@media screen and (max-width: 576px){
+    .display-flex {
+        flex-direction: column;
+    }
 }
