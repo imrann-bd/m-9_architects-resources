@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 /* googel fonts */
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -11,21 +17,26 @@
 .display-flex {
     display: flex;
 }
-.primary-bg{
+
+.primary-bg {
     background-color: rgba(255, 144, 14, 0.1);
 }
+
 /* primary-color */
 .primary-color {
     color: #FF900E;
 }
+
 /* dark02 */
 .gray-color {
     color: #424242;
 }
+
 /* dark03 */
 .description {
     color: #727272;
 }
+
 .parimary-btn {
     padding: 20px 24px;
     background-color: #FF900E;
@@ -34,9 +45,10 @@
     border-radius: 8px;
     border: none;
 }
-main > section {
-max-width: 1440px;
-margin: 70px auto;
+
+main>section {
+    max-width: 1440px;
+    margin: 70px auto;
 }
 
 
@@ -46,28 +58,34 @@ margin: 70px auto;
     font-size: 3rem;
     font-weight: 700;
 }
-.navbar, .banner{
+
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0px auto;
 }
+
 .navbar {
     justify-content: space-between;
     align-items: center;
 }
-.nav-links {
 
-}
+.nav-links {}
+
 .nav-items {
     list-style: none;
 }
+
 .nav-item {
     margin-right: 30px;
 }
+
 .nav-links {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
 }
+
 /* banner */
 .banner-container {
     max-width: 860px;
@@ -75,42 +93,163 @@ margin: 70px auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
 }
+
 .banner img {
     width: 100%;
 }
+
 /* featurs styles */
 .team-container {
     align-items: center;
 }
+
 .team-images {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+
 .features-content {
     margin-left: 75px;
     max-width: 540px;
 }
+
 .features-tittle {
     font-size: 45px;
     font-style: 500;
 }
 
+/* features and love styles */
+.features-enjoy-container {
+    align-items: center;
+}
+
+.features-enjoy-container {
+    justify-content: space-between;
+}
+
+.features-love-content {
+    max-width: 590px;
+}
+
+.features-love-tittle {
+    font-size: 45;
+    font-weight: 700;
+    color: #131313;
+    border-left: 3px solid #FF900E;
+    padding-left: 20px;
+
+}
+
+.love-card-tittle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.love-card {
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.position-btn {
+    background-color: #FF900E;
+    max-width: 350px;
+    text-align: center;
+    padding: 45px;
+    border-radius: 8px;
+}
+.fetrues-love-img img {
+    width: 100%;
+}
+.fetrues-love-img {
+  position: relative;
+}
 
 
+.position-tittle {
+    font-weight: 700;
+    font-size: 65px;
+    color: #fff;
+    margin: 0;
+}
+
+.position-des {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+
+}
+.position-btn {
+   margin-left: -100px;
+   margin-top: -100px;
+   position: absolute;
+}
+/* facts styles */
+.fact-des {
+    margin-bottom: 100px;
+}
+.facts-tille {
+    font-size: 45px;
+    font-weight: 700;
+}
+.fact-container{
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.facts{
+    margin-top: 180px;
+}
+.fact-card {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 45px;
+    width: 240px;
+    height: 240px;
+   
+}
+.fact-title {
+    font-size: 45px;
+    font-weight: 500px;
+    margin: 5px 0px;
+}
+.fact-des {
+    font-size: 20px;
+    font-weight: 500px;
+    
+}
 /* resposnive */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .display-flex {
         flex-direction: column;
     }
+
     .team-images {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .features-content {
         margin-left: 100px;
+    }
+    .features-enjoy-container {
+        flex-direction: column;
+    }
+    .position-btn {
+        display: none;
+        
+    }
+    .fact-container {
+        flex-direction: column;
+        gap: 50px;
+        
+    }
+    .facts-tille, .fact-des {
+        text-align: center;
     }
 }
